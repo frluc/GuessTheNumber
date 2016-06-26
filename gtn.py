@@ -15,11 +15,12 @@ tries = 0
 while guess <> thenumber:
 	print('Type your guess:')
 	guess = input()
+	tries += 1
 	if guess > thenumber:
 		print('too high')
 	elif guess < thenumber:
 		print('too low')
 	elif guess == thenumber:
-		print ('you win!')
+		print 'you win in',tries,'tries!'
 	else:
 		print('WTF?')
